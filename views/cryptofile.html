@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="../_javascript/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="_css/menu.css">
+
+
+<title>Initial Page</title>
+
+</head>
+<body>
+	
+	<h1> <center>Welcome to the Bitcoin's World </center></h1>
+	<hr></hr>
+	
+    <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="check_wallet.html">Check Bitcoin Wallet</a>
+            <a href="create_btcwallet.html">Creating Bitcoin Wallet</a>
+            <a class="active"  href="cryptofile.html">Crypto File</a>
+            
+    </div>
+    <br>
+    <input type="file" id="input">
+    <input type="button" id="send" value="vai" >
+    <script>
+ 
+/*
+function send(){ 
+ var inputElement = document.getElementById("input").files[0];
+ console.log(inputElement);
+}
+
+*/
+</script>
+<script>
+ var button_input = $("#send");
+button_input.on("click",function() {
+        
+  var inputElement = document.getElementById("input").files[0];
+  console.log(inputElement);
+
+})
+    </script>
+</body>
+</html>
