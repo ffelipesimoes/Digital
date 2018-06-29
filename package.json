@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "digital",
   "version": "0.0.0",
   "private": true,
@@ -13,4 +14,31 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
   }
+=======
+    "name": "app-service-hello-world",
+    "description": "Simple Hello World Node.js sample for Azure App Service",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Microsoft",
+    "engines": {
+        "node": ">=6.9.1"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+
+    "dependencies": {
+        "bitcore-explorers": "^1.0.1",
+        "body-parser": "^1.18.2",
+        "crypto-js": "^3.1.9-1",
+        "express": "^4.16.3",
+        "file-system": "^2.2.2",
+        "formidable": "^1.2.1",
+        "fs": "0.0.1-security",
+        "multer": "^1.3.0",
+        "socket.io": "^2.1.0"
+        
+      }
+>>>>>>> parent of 7b7c34c... express 1.0
 }
