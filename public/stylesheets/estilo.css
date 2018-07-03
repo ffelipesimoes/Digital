@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "FonteLogo";
+    src: url("../_fonts/Nunito-Regular.ttf")
+}
+
+body {
+    color: rgba(0,0,0,1);
+    font-family: FonteLogo;
+
+}
+
+header#cabecalho{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-family: FonteLogo;
+}
+
+header#cabecalho a{
+    position: relative;
+    left: 7%;
+}
+
+div#interface {
+    margin: 20px 50px 50px 50px;
+    background-color: #ffffff;
+
+
+}
+div#interface-meio {
+     margin: 0px -45px 0px -60px;
+     background-color: rgba(0,0,0,.55);
+     text-align: center;
+     padding: 45px;
+     color: #ffffff;
+ }
+
+div#interface-line {
+    margin: -45px -50px 50px -60px;
+    padding: 10px;
+    box-shadow: -6px -6px 8px rgba(0,0,0,.3);
+}
+
+div#interface-baixo {
+    margin: 20px 50px 50px 50px;
+    background-color: #ffffff;
+
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a{
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+/*início formatação da imagem  */
+figure.foto-logo {
+    position: relative;
+    max-width: 250px;
+    right: 50%;
+    left: 37%;
+    -webkit-transition: all .3s ease-in;
+}
+
+figure.foto-logo img {
+    width: 100%;
+    height: 100%;
+
+
+}
+figure.foto-logo:hover {
+    -webkit-transform: scale(1.5);
+}
+
+figure.foto-logo:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+figure.foto-logo figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+}
+/*fim formatação da imagem  */
+
+
+/*início formatação do menu */
+
+nav#menu{
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    position: absolute;
+    top:2px;
+    left:920px;
+
+}
+
+nav#menu li {
+    display: inline-block;
+    margin: 12px;
+
+
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu li:hover{
+   color: transparent;
+}
+
+nav#menu a {
+    color: grey;
+    transition: color 0.5s;
+}
+
+nav#menu a:hover{
+    color: #000000;
+
+}
+
+/* fim da formatação do menu */
+
+
+/*início formatação do cabecalho */
+header#cabecalho h2{
+    color: gray;
+    transition: color 0.5s;
+}
+
+header#cabecalho h2:hover{
+    color: #000000;
+}
+
+/*fim formatação do cabecalho */
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+footer#rodape p{
+    text-align: right;
+}
+
+footer#rodape a{
+    color: #65c7ff;
+    font-style: normal;
+    font-size: 15px;
+}
