@@ -34,15 +34,18 @@ div#interface-meio {
      text-align: center;
      padding: 45px;
      color: #ffffff;
+     box-shadow: 0px 0px 8px rgba(0,0,0,.8);
      
  }
 
-div#interface-line {
+/*
+ div#interface-line {
     margin: -45px -50px 50px -60px;
     padding: 10px;
     box-shadow: -6px -6px 8px rgba(0,0,0,.3);
     
 }
+*/
 
 div#interface-baixo {
     margin: 20px 50px 50px 50px;
