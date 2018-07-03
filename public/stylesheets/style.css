@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "FonteLogo";
-    src: url("/fonts/Nunito-Regular.ttf")
+    src: url("../_fonts/Nunito-Regular.ttf")
 }
 
 body {
@@ -14,18 +14,19 @@ body {
 header#cabecalho{
     border-bottom: 1px solid rgba(0,0,0,0.2);
     font-family: FonteLogo;
+   
 }
 
 header#cabecalho a{
     position: relative;
     left: 7%;
+    
 }
 
 div#interface {
     margin: 20px 50px 50px 50px;
     background-color: #ffffff;
-
-
+    
 }
 div#interface-meio {
      margin: 0px -45px 0px -60px;
@@ -33,12 +34,14 @@ div#interface-meio {
      text-align: center;
      padding: 45px;
      color: #ffffff;
+     
  }
 
 div#interface-line {
     margin: -45px -50px 50px -60px;
     padding: 10px;
     box-shadow: -6px -6px 8px rgba(0,0,0,.3);
+    
 }
 
 div#interface-baixo {
@@ -46,6 +49,20 @@ div#interface-baixo {
     background-color: #ffffff;
 
 }
+
+
+div#midias {
+    margin: 20px 50px 50px 50px;
+    background-color: #ffffff;
+
+}
+
+div#contato {
+    margin: 20px 50px 50px 50px;
+    background-color: #ffffff;
+
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
@@ -103,6 +120,7 @@ figure.foto-logo figcaption{
 
 nav#menu{
     display: block;
+    
 }
 
 nav#menu ul {
@@ -110,6 +128,7 @@ nav#menu ul {
     position: absolute;
     top:2px;
     left:920px;
+    
 
 }
 
@@ -158,6 +177,74 @@ footer#rodape{
     border-top: 1px solid rgba(0,0,0,0.2);
 }
 
+/* configuração da pagina de contato */
+.formContato {
+    width: 100%;  
+ }  
+ .formContato input {  
+    width: 90%;  
+    margin-left: 10px;  
+    margin-right: 10px;  
+ }  
+ .formContato textarea {  
+    width: 90%;  
+    margin-left: 10px;  
+    margin-right: 10px;  
+ }  
+ .botaoContato {  
+    margin-left: 10px;  
+    margin-right: 10px;  
+    margin-top: 1px;  
+ }  
+ .pgContato input {  
+    padding-left: 20px;  
+    color: #292929;  
+    font-size: 18px;  
+    background-color: #E9E9E9;  
+    border: 1px solid #E9E9E9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    height: 40px;  
+    margin-bottom: 20px;  
+    border-bottom: 1px solid #ccc;  
+    border-left: 1px solid #ccc;  
+ }  
+ .pgContato textarea {  
+    padding-left: 20px;  
+    color: #292929;  
+    font-size: 18px;  
+    background-color: #E9E9E9;  
+    border: 1px solid #E9E9E9;  
+    -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    height: 200px;  
+    margin-bottom: 20px;  
+    border-bottom: 1px solid #ccc;  
+    border-left: 1px solid #ccc;  
+ }  
+ .botaoContato {  
+    border-radius: 4px;  
+    color: #fff;  
+    padding: 2px 40px;  
+    height: 40px;  
+    margin-top: 18px;  
+    opacity: 0.9;  
+    margin-bottom: 20px;  
+    cursor: pointer;  
+    background: #B22222;  
+    display: inline-block;  
+    border: none;  
+    border-bottom: 1px solid #500707;  
+    border-right: 1px solid #500707;  
+ }  
+ .botaoContato:hover {  
+    opacity: 1.0;  
+    transition: 1s;  
+ }
+
+ /* fim da configuração da pagina de contato. */
 footer#rodape p{
     text-align: right;
 }
