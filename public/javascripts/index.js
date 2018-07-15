@@ -114,7 +114,7 @@ $(document).ready(function() {
 
   var crypto_finish = function(hash) {
     bar.width(100 + '%');
-    explain.html(translate('Document hash: ') + hash);
+    explain.html(translate('O hash do seu documento é: ') + hash);
 	//alert(hash);
     $.post('./api/v1/register/' + hash, onRegisterSuccess);
   };
