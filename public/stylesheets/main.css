@@ -1,0 +1,239 @@
+.dropbox {
+  height: 120px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0;
+  color: #555;
+  border: 2px dashed #555;
+  border-radius: 7px;
+  cursor: default;
+}
+
+.hover {
+  color: #7AC29A;
+  border-color: #7AC29A;
+  border-style: solid;
+}
+
+/* logo */
+
+.sidebar .logo .simple-text,
+.off-canvas-sidebar .logo .simple-text,
+.logo .logo-svg {
+  display: inline-block;
+}
+
+.logo .logo-wordmark {
+  padding-left: 5px;
+}
+
+.logo .logo-svg {
+  position: relative;
+  top: -3px;
+  margin-right: 12px;
+}
+
+.logo .logo-svg .logo-img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 991px) {
+  .off-canvas-sidebar .logo {
+    margin: 0 16px;
+  }
+
+  .off-canvas-sidebar .logo .logo-svg {
+    margin-right: 10px;
+  }
+
+  .off-canvas-sidebar .logo .logo-svg .logo-img {
+    width: 22px;
+    height: 22px;
+    left: 0px;
+  }
+}
+
+
+#icon {
+  text-align: center;
+}
+
+.digest {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* paper-dashboard */
+
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, .navbar, .brand, a, .td-name, td {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .sidebar, .navbar, .nav p, .logo, .logo a, .brand, .navbar-brand {
+  font-family: 'Nunito',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  font-weight: 700;
+}
+
+.sidebar .nav > li.nav-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+.sidebar .nav > li.nav-bottom a{
+  background: rgba(255, 255, 255, 0.14);
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.navbar .navbar-brand {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 6px 0px 4px;
+}
+
+.nav p,
+.sidebar .nav p {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.nav-open .collapse.navbar-collapse.off-canvas-sidebar .sidebar-wrapper .nav.navbar-nav {
+  width: 100%;
+}
+
+/* paper-kit modal */
+
+.modal {
+  z-index: 10001;
+}
+
+.modal-backdrop {
+  z-index: 10000;
+}
+
+.modal-header {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-content {
+  border: 0 none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modal-dialog {
+  padding-top: 60px;
+}
+
+.modal-body {
+  padding: 20px 50px;
+}
+
+.modal-footer {
+  border-top: 1px solid #DDDDDD;
+  padding: 0px;
+}
+
+.modal-footer .left-side, .modal-footer .right-side {
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+}
+
+.modal-footer .btn-simple {
+  padding: 20px;
+  width: 100%;
+}
+
+.modal-footer .divider {
+  background-color: #DDDDDD;
+  display: inline-block;
+  float: inherit;
+  height: 63px;
+  margin: 0px -3px;
+  position: absolute;
+  width: 1px;
+}
+
+.modal.fade .modal-dialog {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+}
+
+.modal.in .modal-dialog {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+}
+
+.modal-backdrop.in {
+  opacity: 0.25;
+}
+
+/* themify icons */
+
+[class^="ti-"], [class*=" ti-"] {
+  font-weight: normal;
+}
+
+/* pretty spinner */
+.spinner {
+  margin: 50px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  } 20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
