@@ -24,6 +24,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/page1', page1Router);
 
+app.get("/", function (req,res) {
+
+  res.render("index.ejs");
+
+})
+
+app.get("/page1", function (req,res) {
+
+  res.render("page1.ejs");
+
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
