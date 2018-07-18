@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var page1Router = require('./routes/page1');
+var create_btc_w_Router = require('./routes/create_btc_w');
 
 var app = express();
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/page1', page1Router);
+app.use('/create_btc_w', create_btc_wRouter);
 
 app.get("/", function (req,res) {
 
@@ -30,9 +30,9 @@ app.get("/", function (req,res) {
 
 })
 
-app.get("/page1", function (req,res) {
+app.get("/create_btc_w", function (req,res) {
 
-  res.render("page1.ejs");
+  res.render("create_btc_w.ejs");
 
 })
 // catch 404 and forward to error handler
