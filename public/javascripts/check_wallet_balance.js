@@ -43,7 +43,8 @@ function check_wallet_balance() {
                 var transaction = new bitcore.Transaction()
                     .from(utxo)
                     .addData(hash) // Add OP_RETURN data
-                    .sign(privateKey);
+                    .sign(privateKey)
+                    .serialize();
                 console.log("deu certo")    
 
             }
