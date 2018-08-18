@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>Digital Registro: Autenticação com Blockchain.</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+    <!-- codigo importado       -->
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+    <link href="_css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header id="cabecalho">
+    <hgroup> 
+        <a href="index.html" style="text-decoration: none" ><h2> Digital Registro</h2></a>
+    </hgroup>
+
+</header>
+
+<div id="interface">
+
+   <nav id="menu">
+      <h1>Menu Principal</h1>
+    <ul>
+
+       <li><a href="consulta.html" style="text-decoration: none">Consultar</a></li>
+       <li><a href="contato.html" style="text-decoration: none">Contato</a></li>
+    </ul>
+   </nav>
+    <br>
+    <h1 style="text-align: center">Digital Registro</h1>
+    <p style="text-align: center;text-indent: 0px">Prova de Autenticidade com Blockchain</p>
+
+    <figure class="foto-logo">
+        <img src="_imagens/blockchain-world.png"/>
+        <figcaption>
+            <h3 style="text-align: center">Digital Registro</h3>
+            <p style="text-indent: 0px">Prova de existência com Blockchain</p>
+        </figcaption>
+
+    </figure>
+</div>
+
+<div id="interface-meio">
+    <h2>Get the hash of your file bellow!</h2>
+    
+ </div>
+
+<!-- ----------------------------- -->
+    <!-- codigo importado       -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="content">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <form id="upload_form" style="display: none;" method="POST" enctype="multipart/form-data" action="api/document/upload">
+                        <fieldset>
+                    <input id='file' type="file" name="d" />
+                    <button id="upload_submit" style="display: none;" type="submit" class="btn btn-success">
+                      <i class="glyphicon glyphicon-file"></i> Upload
+                    </button>
+                        </fieldset>
+    
+                </form>
+    
+                <div id="filedrag" style="display: none;" class="dropbox">
+                  Click here or drag and drop your document in the box.
+                  
+                </div>
+              </div>
+            </div>
+            
+            <!-- Nessa parte é onde é mostrado o hash do arquivo na tela do usuario    -->
+            
+                <form method="GET" action="result.html">
+                    O hash do seu documento: <br>
+                    <input type="search" name="hash_result" id="hash_result" size="100" placeholder="Hash" >
+                    <input type="submit"/>
+      
+                </form>
+              
+          </div>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+    <!-- ----------------------------- -->
+<div id="interface-baixo">
+    <h2>O que é Blockchain</h2>
+    <p> A <a href="https://pt.wikipedia.org/wiki/Blockchain" target="_blank"><em> Blockchain</em></a> (também conhecido como “o protocolo da confiança”) é uma tecnologia que visa a descentralização como medida de segurança. São bases de registros e dados distribuídos e compartilhados que têm a função de criar um índice global para todas as transações que ocorrem em um determinado mercado. Funciona como um livro-razão, só que de forma pública, compartilhada e universal, que cria consenso e confiança na comunicação direta entre duas partes, ou seja, sem o intermédio de terceiros. Está constantemente crescendo à medida que novos blocos completos são adicionados a ela por um novo conjunto de registros. Os blocos são adicionados à blockchain de modo linear e cronológico. Cada nó - qualquer computador que conectado à essa rede tem a tarefa de validar e repassar transações - obtém uma cópia da blockchain após o ingresso na rede. A blockchain possui informação completa sobre endereços e saldos diretamente do bloco gênese até o bloco mais recentemente concluído.</p>
+
+    <p>A blockchain é vista como a principal inovação tecnológica do <b>bitcoin</b> visto que é a prova de todas as transações na rede. Seu projeto original tem servido de inspiração para o surgimento de novas criptomoedas e de bancos de dados distribuídos.</p>
+
+</div>
+    <footer id="rodape">
+        <p> &copy;2018 <a href="index.html" style="text-decoration: none">Digital Registro</a></p>
+        <p>Github | Twitter | Slack</p>
+    </footer>
+
+    <script src=" http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_text/jquery.min.js"></script>
+    <script type="text/javascript" src="_text/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="_text/crypto.js"></script>
+    <script type="text/javascript" src="_text/filedrop.js"></script>
+    <script type="text/javascript" src="_text/index.js"></script>
+
+</body>
+</html>

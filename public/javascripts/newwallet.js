@@ -8,3 +8,5 @@ var address = pkey.toAddress();
 document.getElementById("newwallet").value = address;
 document.getElementById("pkey").value = pkey;
 }
+
+newwallet()

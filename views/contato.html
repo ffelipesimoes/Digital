@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title>Digital Registro: Autenticação com Blockchain.</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+     
+</head>
+
+<body>
+
+<header id="cabecalho">
+    <hgroup>
+        <a href="index.html" style="text-decoration: none" ><h2> Digital Registro</h2></a>
+    </hgroup>
+
+</header>
+
+<div id="interface">
+
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+      <ul>
+  
+         <li><a href="consulta.html" style="text-decoration: none">Consultar</a></li>
+         <li><a href="contato.html" style="text-decoration: none">Contato</a></li>
+      </ul>
+     </nav>
+
+
+
+    <br>
+    <h1 style="text-align: center">Digital Registro</h1>
+    <p style="text-align: center;text-indent: 0px">Prova de Autenticidade com Blockchain</p>
+
+    <figure class="foto-logo">
+        <img src="_imagens/blockchain-world.png"/>
+        <figcaption>
+            <h3 style="text-align: center">Digital Registro</h3>
+            <p style="text-indent: 0px">Prova de existência com Blockchain</p>
+        </figcaption>
+
+    </figure>
+</div>
+
+<div id="interface-meio">
+    <h2>Informe o hash do seu arquivo aqui</h2> <br><br><br><br><br>
+
+    <div id="interface-line">
+
+       <form method="GET" action="result.html">
+            <input type="search" name="q" placeholder="search"/>
+            <input type="submit"/>
+
+       </form>
+
+    </div>
+
+    </br>
+    </br>
+
+<div id="interface-line">
+
+</div>
+
+
+
+   
+
+
+
+
+
+
+    <footer id="rodape">
+        <p> &copy;2018 <a href="index.html" style="text-decoration: none">Digital Registro</a></p>
+        <p>Github | Twitter | Slack</p>
+    </footer>
+
+    <script src=" http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    
+<script>
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+</script>
+
+
+</body>
+
+
+
+</html>
