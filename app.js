@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var create_btc_w_Router = require('./routes/create_btc_w');
 var hash_result_Router = require('./routes/result');
+var consulta_Router = require('./routes/consulta');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/create_btc_w', create_btc_w_Router);
 app.use('/result', hash_result_Router);
+app.use('/consulta', consulta_Router);
 
 app.get("/", function (req,res) {
 
@@ -40,6 +42,11 @@ app.get("/create_btc_w", function (req,res) {
 app.get("/result", function (req,res) {
 
   res.render("result.ejs");
+
+})
+app.get("/consulta", function (req,res) {
+
+  res.render("consulta.ejs");
 
 })
 // catch 404 and forward to error handler
