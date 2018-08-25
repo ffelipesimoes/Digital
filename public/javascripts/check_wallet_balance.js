@@ -32,8 +32,10 @@ function check_wallet_balance () {
                     console.log("PKey: " + Pkey)
                     console.log("hash: " + hash)
 
-                   
-                    var Insight = require('bitcore-explorers').Insight;
+                    var bitcore_explorers = require('bitcore-explorers');
+                    console.log(bitcore_explorers)
+                    var Insight = bitcore_explorers.Insight;
+                    //var Insight = require('bitcore-explorers').Insight;
                     var Insight = new Insight('testnet');
 
                     Insight.getUnspentUtxos(wallet, function(err, utxos) {
