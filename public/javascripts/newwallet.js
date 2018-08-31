@@ -1,7 +1,7 @@
 //'use strict';
 var bitcore = require('bitcore-lib');
 function newwallet(){
-var pkey = new bitcore.PrivateKey('testnet');
+var pkey = new bitcore.PrivateKey('mainnet');
 var address = pkey.toAddress();
 //console.log("A carteira " + address + " foi criada com sucesso." );
 //console.log(pkey );
